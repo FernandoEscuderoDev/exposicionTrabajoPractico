@@ -5,11 +5,13 @@ const Seccion = () => {
     <Box
       as="section"
       textColor="white"
-      textAlign={"center"}
       className="section"
+      justifyContent={"flex-start !important"}
     >
-      <Heading as="h1">Uso del 'Vaya, Valla'</Heading>
-      <Heading as="h2">Comprensión y producción de textos</Heading>
+      <Flex as='article' bg={"blue.500"} justifyContent={'space-evenly'} align={"center"} h={'100vh'} flexDir={'column'} textTransform={'uppercase'}>
+        <Heading as="h1" fontSize={'5xl'}>Uso del 'Vaya, Valla'</Heading>
+        <Heading as="h2" fontSize={"xl"}>Comprensión y producción de textos</Heading>
+      </Flex>
     </Box>
   );
 };
