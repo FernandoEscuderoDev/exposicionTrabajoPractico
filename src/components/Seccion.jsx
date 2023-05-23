@@ -20,9 +20,9 @@ const Seccion = () => {
         w='100%'
         flexDir={"column"}
         textTransform={"uppercase"}
-        bgColor={'blackAlpha.400'}
+        bgColor={'blackAlpha.500'}
         backdropFilter="auto"
-        backdropBlur={"base"}
+        backdropBlur={"md"}
         textColor={"white"}
       >
         <Heading
@@ -32,8 +32,6 @@ const Seccion = () => {
           textAlign={"center"}
           w={"35%"}
           h={"xl"}
-          rounded={"full"}
-          boxShadow={"3xl"}
           as="h1"
           fontSize={"5xl"}
         >
