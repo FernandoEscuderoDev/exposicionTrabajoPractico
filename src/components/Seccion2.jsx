@@ -7,32 +7,9 @@ import {
   SimpleGrid,
   Text,
 } from "@chakra-ui/react";
+import { contenido } from "./Contenido";
 
 const Seccion2 = () => {
-  const contenido = [
-    {
-      titulo: "Vaya",
-      contenido: `Es una conjugación del verbo ‘Ir’.\n 'Vaya' corresponde a la primera y tercera persona singular delsubjuntivo. se utiliza como interjección o exclamación.\n Ejemplo:`,
-      frases: [
-        "¡Vaya! Nunca hubiese esperado esto de él.",
-        "No Vaya a ser que llegues tarde a la reunión.",
-        "Te llamaré cuando Vaya a tu casa.",
-        "Espero que Vaya mi amigo.",
-      ],
-      color: "purple.700",
-    },
-    {
-      titulo: "Valla",
-      contenido: `Es una conjugación del verbo ‘Vallar’.\n “Valla” corresponde a la segunda persona singular del imperativo y tercera persona singular del presente indicativo.\n Ejemplos:`,
-      frases: [
-        "No te acerques a la Valla del estadio durante el partido.",
-        "La Valla publicitaria está colocada en un lugar estratégico.",
-        "La Valla de seguridad impide el acceso al área restringida.",
-        "Tenemos que reparar la Valla que se cayó con el viento.",
-      ],
-      color: "blue.700",
-    },
-  ];
   return (
     <>
       {contenido.map((dato) => (
@@ -41,7 +18,6 @@ const Seccion2 = () => {
           textColor="white"
           className="section"
           textAlign={"center"}
-          justifyContent={"flex-start !important"}
         >
           <Flex
             as="article"
@@ -52,7 +28,7 @@ const Seccion2 = () => {
             flexDir={"column"}
             textTransform={"uppercase"}
           >
-            <Heading as="h2" fontSize={"7xl"}>
+            <Heading as="h2" textShadow={'6px 3px #000'} fontSize={"7xl"}>
               {dato.titulo}
             </Heading>
             <Text
@@ -66,7 +42,6 @@ const Seccion2 = () => {
               as={"ul"}
               columns={2}
               spacing={2}
-              textAlign={"left"}
               h={"20%"}
               w={"90%"}
             >
@@ -77,7 +52,7 @@ const Seccion2 = () => {
                     styles={{
                       mx: "1",
                       p: "1",
-                      bg: "orange.100",
+                      bg: 'white',
                       fontWeight: "bold",
                       rounded: "40px",
                     }}

@@ -30,16 +30,16 @@ const Seccion = () => {
           alignItems={"center"}
           justifyContent={"center"}
           textAlign={"center"}
-          w={"32%"}
-          h={"md"}
+          w={"35%"}
+          h={"xl"}
           rounded={"full"}
           boxShadow={"3xl"}
           as="h1"
           fontSize={"5xl"}
         >
-          Uso del "Vaya", "Valla"
+          Uso del "Vaya", "Valla" y "Baya"
         </Heading>
-        <Heading as="h3" fontSize={"xl"}>
+        <Heading as="h3"pb={"14"} fontSize={"xl"}>
           Comprensión y producción de textos
         </Heading>
       </Flex>
