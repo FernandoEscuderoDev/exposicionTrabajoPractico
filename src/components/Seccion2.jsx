@@ -14,27 +14,25 @@ const Seccion2 = () => {
   const contenido = [
     {
       titulo: "Vaya",
-      contenido:
-        `Es una conjugación del verbo ‘Ir’.\n 'Vaya' corresponde a la primera y tercera persona singular delsubjuntivo. se utiliza como interjección o exclamación.\n Ejemplo:`,
+      contenido: `Es una conjugación del verbo ‘Ir’.\n 'Vaya' corresponde a la primera y tercera persona singular delsubjuntivo. se utiliza como interjección o exclamación.\n Ejemplo:`,
       frases: [
         "¡Vaya! Nunca hubiese esperado esto de él.",
         "No Vaya a ser que llegues tarde a la reunión.",
-        "Te llamaré cuando Vaya para tu casa.",
-        "Espero que Vaya un amigo.",
+        "Te llamaré cuando Vaya a tu casa.",
+        "Espero que Vaya mi amigo.",
       ],
-      color:'purple.700'
+      color: "purple.700",
     },
     {
       titulo: "Valla",
-      contenido:
-        `Es una conjugación del verbo ‘Vallar’.\n “Valla” corresponde a la segunda persona singular del imperativo y tercera persona singular del presente indicativo.\n Ejemplos:`,
+      contenido: `Es una conjugación del verbo ‘Vallar’.\n “Valla” corresponde a la segunda persona singular del imperativo y tercera persona singular del presente indicativo.\n Ejemplos:`,
       frases: [
         "No te acerques a la Valla del estadio durante el partido.",
         "La Valla publicitaria está colocada en un lugar estratégico.",
         "La Valla de seguridad impide el acceso al área restringida.",
         "Tenemos que reparar la Valla que se cayó con el viento.",
       ],
-      color:'teal.700'
+      color: "teal.700",
     },
   ];
   return (
@@ -56,10 +54,16 @@ const Seccion2 = () => {
             flexDir={"column"}
             textTransform={"uppercase"}
           >
-            <Heading as="h1" fontSize={"7xl"}>
+            <Heading as="h2" fontSize={"7xl"}>
               {dato.titulo}
             </Heading>
-            <Text fontSize={"2xl"} w={"80%"}>{dato.contenido}</Text>
+            <Text
+              fontSize={"2xl"}
+              w={"80%"}
+              style={{ whiteSpace: "break-spaces" }}
+            >
+              {dato.contenido}
+            </Text>
             <SimpleGrid
               as={"ul"}
               columns={2}
@@ -71,7 +75,7 @@ const Seccion2 = () => {
               {dato.frases.map((datos, index) => (
                 <Center as="li" key={index} fontSize={"lg"}>
                   <Highlight
-                    query={["Valla",'Vaya']}
+                    query={["Valla", "Vaya"]}
                     styles={{
                       mx: "1",
                       p: "1",
