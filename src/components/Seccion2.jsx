@@ -12,15 +12,16 @@ import { contenido } from "./Contenido";
 const Seccion2 = () => {
   return (
     <>
-      {contenido.map((dato) => (
+      {contenido.map((dato, index) => (
         <Box
           as="section"
+          key={index}
           textColor="white"
           className="section"
           textAlign={"center"}
         >
           <Flex
-            as="article"
+          as={'article'}
             bg={dato.color}
             justifyContent={"space-evenly"}
             align={"center"}

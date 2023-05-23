@@ -3,10 +3,11 @@ import ReactFullpage from "@fullpage/react-fullpage";
 import Seccion from "./Seccion";
 import Seccion2 from "./Seccion2";
 import { SeccionSintesis } from "./SeccionSintesis";
+import { Box } from "@chakra-ui/react";
 
 const page1 = () => {
   return (
-    <div className="App">
+    <Box as="main" className="App">
       <ReactFullpage
         navigation
         render={(comp) => (
@@ -17,7 +18,7 @@ const page1 = () => {
           </ReactFullpage.Wrapper>
         )}
       />
-    </div>
+    </Box>
   );
 };
 
