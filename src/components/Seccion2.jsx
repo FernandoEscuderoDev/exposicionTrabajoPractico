@@ -48,7 +48,7 @@ const Seccion2 = () => {
               {dato.frases.map((datos, index) => (
                 <Center as="li" key={index} fontSize={"lg"}>
                   <Highlight
-                    query={["Valla", "Vaya"]}
+                    query={["Valla",'¡Vaya!', "Vaya"]}
                     styles={{
                       mx: "1",
                       p: "1",
