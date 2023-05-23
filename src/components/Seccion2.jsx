@@ -6,8 +6,6 @@ import {
   Highlight,
   SimpleGrid,
   Text,
-  Wrap,
-  WrapItem,
 } from "@chakra-ui/react";
 
 const Seccion2 = () => {
@@ -32,7 +30,7 @@ const Seccion2 = () => {
         "La Valla de seguridad impide el acceso al área restringida.",
         "Tenemos que reparar la Valla que se cayó con el viento.",
       ],
-      color: "teal.700",
+      color: "blue.700",
     },
   ];
   return (

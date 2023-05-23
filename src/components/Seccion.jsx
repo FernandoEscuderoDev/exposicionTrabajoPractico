@@ -2,15 +2,28 @@ import { Box, Flex, Heading } from "@chakra-ui/react";
 
 const Seccion = () => {
   return (
-    <Box as="section" className="section">
+    <Box
+      as="section"
+      bgImage={
+        "https://images.pexels.com/photos/3219951/pexels-photo-3219951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+      }
+      bgSize={"cover"}
+      bgAttachment={"fixed"}
+      bgPosition={"100% 100%"}
+      bgRepeat={"no-repeat"}
+      className="section"
+    >
       <Flex
         as="article"
-        bg={"red.600"}
         justifyContent={"space-evenly"}
         align={"center"}
         h={"100vh"}
         flexDir={"column"}
         textTransform={"uppercase"}
+        bgColor={'blackAlpha.400'}
+        backdropFilter="auto"
+        backdropBlur={"base"}
+        textColor={"white"}
       >
         <Heading
           display={"flex"}
@@ -19,9 +32,8 @@ const Seccion = () => {
           textAlign={"center"}
           w={"32%"}
           h={"md"}
-          bg={"red.500"}
           rounded={"full"}
-          boxShadow={"2xl"}
+          boxShadow={"3xl"}
           as="h1"
           fontSize={"5xl"}
         >
