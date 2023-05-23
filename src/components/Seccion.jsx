@@ -18,6 +18,7 @@ const Seccion = () => {
         justifyContent={"space-evenly"}
         align={"center"}
         h={"100vh"}
+        w='100%'
         flexDir={"column"}
         textTransform={"uppercase"}
         bgColor={'blackAlpha.400'}
