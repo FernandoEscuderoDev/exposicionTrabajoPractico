@@ -5,7 +5,7 @@ const Seccion = () => {
     <Box
       as="section"
       bgImage={
-        "https://images.pexels.com/photos/3219951/pexels-photo-3219951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        "/bgSeccion.jpg"
       }
       bgSize={"cover"}
       bgPosition={"100% 100%"}
