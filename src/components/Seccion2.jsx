@@ -22,7 +22,7 @@ const Seccion2 = () => {
         >
           <Flex
             as={"article"}
-            bgGradient={`linear(to-t, ${dato.color})`}
+            bgGradient={`linear(to-b, ${dato.color})`}
             justifyContent={"space-evenly"}
             align={"center"}
             h={"100vh"}
@@ -59,8 +59,8 @@ const Seccion2 = () => {
                   <Highlight
                     query={["Valla", "¡Vaya!", "Vaya",'Bayas','Baya']}
                     styles={{
-                      mx: {sm:'0.5',lg:'1'},
-                      p: {sm:'0.5',lg:'1'},
+                      mx: {lg:'1'},
+                      p: {lg:'1'},
                       bg: "white",
                       fontWeight: "bold",
                       rounded: "40px",

@@ -29,7 +29,7 @@ export const SeccionSintesis = () => {
         flexDir={"column"}
         textTransform={"uppercase"}
       >
-        <Heading as="h2" textShadow={"6px 3px #000"} fontSize={"7xl"}>
+        <Heading as="h2" textShadow={"0px 6px #000"} fontSize={"7xl"}>
           Sintesis
         </Heading>
         <VStack fontSize={"xl"} w={"60%"} gap={10}>
