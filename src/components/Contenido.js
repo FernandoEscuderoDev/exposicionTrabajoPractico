@@ -29,12 +29,12 @@ export const contenido = [
   },
   {
     titulo: "Baya",
-    contenido: `Es una conjugación del verbo “Ir”.\n “Vaya” corresponde a la primera y tercera persona singular delsubjuntivo. se utiliza como interjección o exclamación.\n Ejemplo:`,
+    contenido: `Tipo de fruto carnoso con semillas rodeadas de pulpa\n por ejemplo: Arandanos, Uvas, etc..`,
     frases: [
-      "¡Vaya! Nunca hubiese esperado esto de él.",
-      "No Vaya a ser que llegues tarde a la reunión.",
-      "Te llamaré cuando Vaya a tu casa.",
-      "Espero que Vaya mi amigo.",
+      "Las bayas son una explosión de sabor.",
+      "Saborear una baya es deleitar el paladar.",
+      "Las bayas añaden frescura a cualquier postre.",
+      "¡Las bayas son el toque perfecto para un batido refrescante!",
     ],
     image:'/gatoOjon.png',
     sintesis:

@@ -32,22 +32,22 @@ const Seccion2 = () => {
             <Heading
               as="h2"
               textShadow={"6px 3px #000"}
-              position={"relative"}
+              position={'relative'}
               _before={{
                 content: '" "',
                 position: "absolute",
-                p: 28,
+                p: {md:16,lg:28},
                 bgImage:dato.image,
                 bgSize:'cover',
-                left: "350px",
-                top:'-50px'
+                left: {sm:'150px',lg:'350px'},
+                top:{sm:'-40px',lg:'-70px'}
               }}
-              fontSize={"7xl"}
+              fontSize={{sm:'5xl',lg:'7xl'}}
             >
               {dato.titulo}
             </Heading>
             <Text
-              fontSize={"2xl"}
+              fontSize={{sm:'lg',lg:'2xl'}}
               w={"80%"}
               style={{ whiteSpace: "break-spaces" }}
             >
@@ -55,12 +55,12 @@ const Seccion2 = () => {
             </Text>
             <SimpleGrid as={"ul"} columns={2} spacing={2} h={"20%"} w={"90%"}>
               {dato.frases.map((datos, index) => (
-                <Center as="li" key={index} fontSize={"lg"}>
+                <Center as="li" key={index} fontSize={{sm:'sm',lg:'lg'}}>
                   <Highlight
-                    query={["Valla", "¡Vaya!", "Vaya"]}
+                    query={["Valla", "¡Vaya!", "Vaya",'Bayas','Baya']}
                     styles={{
-                      mx: "1",
-                      p: "1",
+                      mx: {sm:'0.5',lg:'1'},
+                      p: {sm:'0.5',lg:'1'},
                       bg: "white",
                       fontWeight: "bold",
                       rounded: "40px",

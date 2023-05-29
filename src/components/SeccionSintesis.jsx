@@ -10,14 +10,14 @@ import {
 import { contenido } from "./Contenido";
 
 export const SeccionSintesis = () => {
-  const [yellow600, yellow700] = useToken("colors", [
-    "yellow.600",
+  const [yellow500, yellow700] = useToken("colors", [
+    "yellow.500",
     "yellow.700",
   ]);
   return (
     <Box
       as="section"
-      bgGradient={`linear(to-t, ${yellow700}, ${yellow600})`}
+      bgGradient={`linear(to-t, ${yellow700}, ${yellow500})`}
       textColor={"white"}
       className="section"
     >

@@ -33,11 +33,11 @@ const Seccion = () => {
           w={"35%"}
           h={"xl"}
           as="h1"
-          fontSize={"5xl"}
+          fontSize={{base: '4xl',md:'5xl',lg:'6xl'}}
         >
           Uso del "Vaya", "Valla" y "Baya"
         </Heading>
-        <Heading as="h3" pb={"14"} fontSize={"xl"}>
+        <Heading as="h3" pb={"14"} fontSize={{base: 'md',md:'lg',lg:'xl'}}>
           Comprensión y producción de textos
         </Heading>
       </Flex>
