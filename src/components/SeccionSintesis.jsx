@@ -1,15 +1,28 @@
-import { Box, Flex, Heading, Highlight, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Heading,
+  Highlight,
+  Text,
+  VStack,
+  useToken,
+} from "@chakra-ui/react";
 import { contenido } from "./Contenido";
 
 export const SeccionSintesis = () => {
+  const [yellow600, yellow700] = useToken("colors", [
+    "yellow.600",
+    "yellow.700",
+  ]);
   return (
     <Box
       as="section"
-      bgColor={"yellow.600"}
+      bgGradient={`linear(to-t, ${yellow700}, ${yellow600})`}
       textColor={"white"}
       className="section"
     >
-      <Flex as='article'
+      <Flex
+        as="article"
         justifyContent={"space-evenly"}
         align={"center"}
         h={"100vh"}

@@ -21,15 +21,29 @@ const Seccion2 = () => {
           textAlign={"center"}
         >
           <Flex
-          as={'article'}
-            bg={dato.color}
+            as={"article"}
+            bgGradient={`linear(to-t, ${dato.color})`}
             justifyContent={"space-evenly"}
             align={"center"}
             h={"100vh"}
             flexDir={"column"}
             textTransform={"uppercase"}
           >
-            <Heading as="h2" textShadow={'6px 3px #000'} fontSize={"7xl"}>
+            <Heading
+              as="h2"
+              textShadow={"6px 3px #000"}
+              position={"relative"}
+              _before={{
+                content: '" "',
+                position: "absolute",
+                p: 28,
+                bgImage:dato.image,
+                bgSize:'cover',
+                left: "350px",
+                top:'-50px'
+              }}
+              fontSize={"7xl"}
+            >
               {dato.titulo}
             </Heading>
             <Text
@@ -39,21 +53,15 @@ const Seccion2 = () => {
             >
               {dato.contenido}
             </Text>
-            <SimpleGrid
-              as={"ul"}
-              columns={2}
-              spacing={2}
-              h={"20%"}
-              w={"90%"}
-            >
+            <SimpleGrid as={"ul"} columns={2} spacing={2} h={"20%"} w={"90%"}>
               {dato.frases.map((datos, index) => (
                 <Center as="li" key={index} fontSize={"lg"}>
                   <Highlight
-                    query={["Valla",'¡Vaya!', "Vaya"]}
+                    query={["Valla", "¡Vaya!", "Vaya"]}
                     styles={{
                       mx: "1",
                       p: "1",
-                      bg: 'white',
+                      bg: "white",
                       fontWeight: "bold",
                       rounded: "40px",
                     }}

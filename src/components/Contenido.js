@@ -8,9 +8,10 @@ export const contenido = [
       "Vaya camisa te pusiste",
       "Vaya fuerza tiene ese jugador",
     ],
+    image:'/BayaLlorando.png',
     sintesis:
       "La palabra «VAYA» encierra diferentes sentidos. Puede ser el verbo ir conjugado en primera o tercera persona del subjuntivo, y puede ser la acción de expresar a alguien que se dirija a un lugar.",
-    color: "red.700",
+    color: "red.800, red.700",
   },
   {
     titulo: "Valla",
@@ -21,9 +22,10 @@ export const contenido = [
       "Mirá la valla, colocaron un nuevo anuncio",
       "Tenemos que reparar la Valla que se cayó con el viento.",
     ],
+    image:'/BayaLlorando.png',
     sintesis:
       "La palabra «VALLA», por otro lado, se refiere a una estructura o barrera física utilizada para limitar o cerrar un área. Puede ser una cerca de madera, un muro de piedra o cualquier otra estructura que se utilice para impedir el acceso o la visibilidad.",
-    color: "blue.700",
+    color: "blue.800, blue.700",
   },
   {
     titulo: "Baya",
@@ -34,8 +36,9 @@ export const contenido = [
       "Te llamaré cuando Vaya a tu casa.",
       "Espero que Vaya mi amigo.",
     ],
+    image:'/gatoOjon.png',
     sintesis:
       "La palabra «BAYA» encierra diferentes sentidos. Puede ser el verbo ir conjugado en primera o tercera persona del subjuntivo, y puede ser la acción de expresar a alguien que se dirija a un lugar.",
-    color: "purple.700",
+    color: "purple.800, purple.700",
   },
 ];

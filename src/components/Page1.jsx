@@ -14,7 +14,7 @@ const page1 = () => {
           <ReactFullpage.Wrapper>
             <Seccion />
             <Seccion2 />
-            <SeccionSintesis/>
+            <SeccionSintesis />
           </ReactFullpage.Wrapper>
         )}
       />

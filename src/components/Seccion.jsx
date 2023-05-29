@@ -17,10 +17,10 @@ const Seccion = () => {
         justifyContent={"space-evenly"}
         align={"center"}
         h={"100vh"}
-        w='100%'
+        w="100%"
         flexDir={"column"}
         textTransform={"uppercase"}
-        bgColor={'blackAlpha.500'}
+        bgColor={"blackAlpha.500"}
         backdropFilter="auto"
         backdropBlur={"md"}
         textColor={"white"}
@@ -37,7 +37,7 @@ const Seccion = () => {
         >
           Uso del "Vaya", "Valla" y "Baya"
         </Heading>
-        <Heading as="h3"pb={"14"} fontSize={"xl"}>
+        <Heading as="h3" pb={"14"} fontSize={"xl"}>
           Comprensión y producción de textos
         </Heading>
       </Flex>
