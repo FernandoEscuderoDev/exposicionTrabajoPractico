@@ -36,7 +36,7 @@ const Seccion2 = () => {
               _before={{
                 content: '" "',
                 position: "absolute",
-                p: {base: 16, lg: 28 },
+                p: { base: 16, lg: 28 },
                 bgImage: dato.image,
                 bgSize: "cover",
                 left: { base: "200px", lg: "400px" },
@@ -71,7 +71,7 @@ const Seccion2 = () => {
                   <Highlight
                     query={["Valla", "¡Vaya!", "Vaya", "Bayas", "Baya"]}
                     styles={{
-                      mx: 1,
+                      mx: { base: "0.5", lg: "1" },
                       p: 1,
                       bg: "white",
                       fontWeight: "bold",
