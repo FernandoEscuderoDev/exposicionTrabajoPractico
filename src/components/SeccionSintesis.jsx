@@ -37,7 +37,7 @@ export const SeccionSintesis = () => {
           _before={{
             content: '" "',
             position: "absolute",
-            p: { base: 14, lg: 28 },
+            p: { base: 16, lg: 28 },
             bgImage: "/BayaLlorando.png",
             bgSize: "cover",
             left: { base: "250px", lg: "400px" },

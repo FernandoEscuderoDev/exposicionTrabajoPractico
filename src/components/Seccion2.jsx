@@ -39,7 +39,7 @@ const Seccion2 = () => {
                 p: {base: 16, lg: 28 },
                 bgImage: dato.image,
                 bgSize: "cover",
-                left: { base: "200px", lg: "350px" },
+                left: { base: "200px", lg: "400px" },
                 top: { base: "-30px", lg: "-70px" },
               }}
               fontSize={{ base: "5xl", lg: "7xl" }}
