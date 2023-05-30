@@ -13,7 +13,7 @@ export const SeccionSintesis = () => {
   const sintesis = [
     "La palabra “vaya” tiene diferentes sentidos. Puede ser el verbo ir conjugado en primera o tercera persona del subjuntivo, y puede ser la acción de expresar a alguien que se dirija a un lugar.",
     "La palabra “valla”, por otro lado, se refiere a una estructura o barrera física para limitar o cerrar un área. Y para su correcta utilización se debe tener en cuenta que el primero es un verbo y el segundo un sustantivo.",
-    "La palabra “Baya”, se refiere a un fruto carnoso con semillas",
+    "La palabra “Baya”, se refiere a un tipo de fruto pequeño y redondo que generalmente se encuentra en arbustos o árboles. Son comúnmente utilizadas en la alimentación humana y animal, así como para hacer mermeladas y postres."
   ];
   return (
     <Box
