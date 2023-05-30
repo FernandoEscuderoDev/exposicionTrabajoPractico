@@ -1,4 +1,5 @@
 import { Box, Flex, Heading } from "@chakra-ui/react";
+import { Bloqueador } from "./Bloqueador";
 
 const Seccion = () => {
   return (
@@ -35,6 +36,7 @@ const Seccion = () => {
         >
           Uso del "Vaya", "Valla" y "Baya"
         </Heading>
+        <Bloqueador/>
         <Heading as="h3" pb={"14"} fontSize={{ base: "lg", xl: "xl" }}>
           Comprensión y producción de textos
         </Heading>
