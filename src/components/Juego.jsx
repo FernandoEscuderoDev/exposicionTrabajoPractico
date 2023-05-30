@@ -28,7 +28,7 @@ export const Juego = () => {
           position={"relative"}
           boxShadow={"dark-lg"}
           rounded={"3xl"}
-          w={"70%"}
+          w={"72.50%"}
           h={"75%"}
         >
           <Box
