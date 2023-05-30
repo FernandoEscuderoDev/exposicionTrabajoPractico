@@ -12,7 +12,7 @@ export const Integrantes = () => {
     if (isInView) {
       const jsConfetti = new JSConfetti();
       const confettisActivado = setTimeout(() => {
-        window.navigator.vibrate([200, 300, 200, 300]);
+        window.navigator.vibrate([200, 300, 200, 300,200, 300, 200, 300, 300, 300,200]);
         jsConfetti.addConfetti({
           confettiNumber: 300,
           emojiSize: 50,
@@ -54,22 +54,23 @@ export const Integrantes = () => {
             _before={{
               content: '" "',
               position: "absolute",
-              p: { base: 16, xl: 28 },
+              p: { base: 14, xl: 24 },
               bgImage:
                 "https://media.tenor.com/HLrXIleGBToAAAAi/transparent-cat.gif",
               bgSize: "cover",
               right: { base: "250px", xl: "450px" },
-              top: { base: "-40px", xl: "-70px" },
+              top: { base: "-30px", xl: "-70px" },
             }}
             _after={{
               content: '" "',
               position: "absolute",
-              p: { base: 16, xl: 28 },
+              transform:'scaleX(-1)',
+              p: { base: 14, xl: 24 },
               bgImage:
                 "https://media.tenor.com/HLrXIleGBToAAAAi/transparent-cat.gif",
               bgSize: "cover",
               left: { base: "250px", xl: "450px" },
-              top: { base: "-40px", xl: "-70px" },
+              top: { base: "-30px", xl: "-70px" },
             }}
             fontSize={{ base: "xl", xl: "4xl" }}
           >
