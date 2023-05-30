@@ -40,7 +40,7 @@ export const SeccionSintesis = () => {
             p: { base: 16, xl: 28 },
             bgImage: "/BayaLlorando.png",
             bgSize: "cover",
-            left: { base: "240px", xl: "460px" },
+            left: { base: "280px", xl: "460px" },
             top: { base: "-30px", xl: "-70px" },
           }}
           fontSize={{ base: "4xl", xl: "7xl" }}
