@@ -43,7 +43,7 @@ export const SeccionSintesis = () => {
             left: { base: "250px", xl: "400px" },
             top: { base: "-30px", xl: "-70px" },
           }}
-          fontSize={{ base: "5xl", xl: "7xl" }}
+          fontSize={{ base: "4xl", xl: "7xl" }}
         >
           Sintesis
         </Heading>
