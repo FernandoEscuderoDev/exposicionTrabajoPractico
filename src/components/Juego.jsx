@@ -34,7 +34,7 @@ export const Juego = () => {
           <Box
             as="iframe"
             title="'Valla, Vaya, Baya'"
-            frameborder="0"
+            frameBorder="0"
             width="100%"
             height="100%"
             margin={"auto"}
@@ -45,7 +45,7 @@ export const Juego = () => {
             src="https://view.genial.ly/647629774b8e7900125d4a65"
             type="text/html"
             allowscriptaccess="always"
-            allowfullscreen="true"
+            allowFullScreen={true}
             scrolling="no"
             allownetworking="all"
           />

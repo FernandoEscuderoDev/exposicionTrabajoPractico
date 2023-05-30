@@ -12,9 +12,14 @@ export const Integrantes = () => {
     if (isInView) {
       const jsConfetti = new JSConfetti();
       const confettisActivado = setTimeout(() => {
-        window.navigator.vibrate([
-          200, 80, 200, 80, 200, 80, 200, 80, 400, 50, 400,
-        ]);
+        if (window.navigator && window.navigator.vibrate) {
+          window.navigator.vibrate([
+            200, 80, 200, 80, 200, 80, 200, 80, 400, 50, 400,
+          ]);
+        } else {
+          console.log('no funciona')
+        }
+
         jsConfetti.addConfetti({
           confettiNumber: 300,
           emojiSize: 50,
