@@ -1,15 +1,35 @@
-import { Box, Flex } from "@chakra-ui/react";
+import { Box, Heading, VStack, useToken } from "@chakra-ui/react";
 
 export const Juego = () => {
+  const [yellow500, yellow700] = useToken("colors", [
+    "orange.500",
+    "orange.700",
+  ]);
   return (
     <Box w={"100%"} className="section">
-      <Flex justifyContent={"center"}
-          bgColor={"teal.500"} alignItems={"center"}>
+      <VStack
+        justifyContent={"center"}
+        h={"100vh"}
+        bgGradient={`linear(to-t, ${yellow700}, ${yellow500})`}
+        alignItems={"center"}
+        gap={{ base: 2, xl: 4 }}
+      >
+        <Heading
+          as="h2"
+          color={"white"}
+          textShadow={"6px 3px #000"}
+          textTransform={"uppercase"}
+          position={"relative"}
+          fontSize={{ base: "5xl", xl: "7xl" }}
+        >
+          Hora de jugar
+        </Heading>
         <Box
           position={"relative"}
-          paddingTop={"0"}
-          w={'90%'}
-          h={"100vh"}
+          boxShadow={"dark-lg"}
+          rounded={"3xl"}
+          w={"70%"}
+          h={"75%"}
         >
           <Box
             as="iframe"
@@ -17,19 +37,20 @@ export const Juego = () => {
             frameborder="0"
             width="100%"
             height="100%"
-            margin={'auto'}
+            margin={"auto"}
             position={"absolute"}
+            rounded={"3xl"}
             top={0}
             left={0}
             src="https://view.genial.ly/647629774b8e7900125d4a65"
             type="text/html"
             allowscriptaccess="always"
             allowfullscreen="true"
-            scrolling="yes"
+            scrolling="no"
             allownetworking="all"
           />
         </Box>
-      </Flex>
+      </VStack>
     </Box>
   );
 };
