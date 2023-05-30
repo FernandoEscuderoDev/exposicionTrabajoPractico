@@ -20,7 +20,7 @@ export const Juego = () => {
           textShadow={"6px 3px #000"}
           textTransform={"uppercase"}
           position={"relative"}
-          fontSize={{ base: "5xl", xl: "7xl" }}
+          fontSize={{ base: "4xl", xl: "7xl" }}
         >
           Hora de jugar
         </Heading>
