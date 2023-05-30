@@ -5,6 +5,7 @@ import {
   ModalHeader,
   ModalBody,
   useBreakpointValue,
+  ModalFooter,
 } from "@chakra-ui/react";
 
 export const Bloqueador = () => {
@@ -13,15 +14,14 @@ export const Bloqueador = () => {
     sm: false,
   });
   return (
-    <Modal
-      size={"xl"}
-      isOpen={variant}
-      isCentered
-    >
+    <Modal size={"xs"} isOpen={variant} isCentered>
       <ModalOverlay backdropFilter="blur(5px) hue-rotate(250deg)" />
-      <ModalContent>
-        <ModalHeader>Voltea el celular</ModalHeader>
-        <ModalBody>aasasdas</ModalBody>
+      <ModalContent rounded={"xl"} color={"white"} bgColor={"red.500"}>
+        <ModalHeader boxShadow={"dark-lg"}>Gira el celular</ModalHeader>
+        <ModalBody>
+          Esta pagina esta diseñada para estar en Horizontal
+        </ModalBody>
+        <ModalFooter fontWeight={"bold"}>Dale voltealo</ModalFooter>
       </ModalContent>
     </Modal>
   );
