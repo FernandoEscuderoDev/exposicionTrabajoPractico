@@ -37,20 +37,20 @@ export const SeccionSintesis = () => {
           _before={{
             content: '" "',
             position: "absolute",
-            p: { base: 16, lg: 28 },
+            p: { base: 16, xl: 28 },
             bgImage: "/BayaLlorando.png",
             bgSize: "cover",
-            left: { base: "250px", lg: "400px" },
-            top: { base: "-30px", lg: "-70px" },
+            left: { base: "250px", xl: "400px" },
+            top: { base: "-30px", xl: "-70px" },
           }}
-          fontSize={{ base: "5xl", lg: "7xl" }}
+          fontSize={{ base: "5xl", xl: "7xl" }}
         >
           Sintesis
         </Heading>
         <VStack
           alignItems={"flex-start"}
-          gap={{ base: 2, md: 4, lg: 8 }}
-          fontSize={{ base: "xs",md:'sm', lg: "xl" }}
+          gap={{ base: 2, md: 4, xl: 8 }}
+          fontSize={{ base: "xs", md: "sm", xl: "xl" }}
           w={"60%"}
         >
           {sintesis.map((dato, index) => (

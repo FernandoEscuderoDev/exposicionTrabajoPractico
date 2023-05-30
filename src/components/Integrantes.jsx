@@ -40,25 +40,48 @@ export const Integrantes = () => {
         <Heading
           as="h2"
           textShadow={"0px 4px #000"}
-          fontSize={{ base: "4xl", lg: "7xl" }}
+          fontSize={{ base: "4xl", xl: "7xl" }}
           ref={ref}
         >
           Integrantes
         </Heading>
 
-        <VStack gap={{ lg: 4 }}>
-          <Heading fontSize={{ base: "xl", lg: "4xl" }}>Juliana Verna</Heading>
-          <Heading fontSize={{ base: "xl", lg: "4xl" }}>
+        <VStack gap={{ xl: 4 }}>
+          <Heading fontSize={{ base: "xl", xl: "4xl" }}>Juliana Verna</Heading>
+          <Heading
+            position={"relative"}
+            _before={{
+              content: '" "',
+              position: "absolute",
+              p: { base: 16, xl: 28 },
+              bgImage:
+                "https://media.tenor.com/HLrXIleGBToAAAAi/transparent-cat.gif",
+              bgSize: "cover",
+              right: { base: "250px", xl: "450px" },
+              top: { base: "-40px", xl: "-70px" },
+            }}
+            _after={{
+              content: '" "',
+              position: "absolute",
+              p: { base: 16, xl: 28 },
+              bgImage:
+                "https://media.tenor.com/HLrXIleGBToAAAAi/transparent-cat.gif",
+              bgSize: "cover",
+              left: { base: "250px", xl: "450px" },
+              top: { base: "-40px", xl: "-70px" },
+            }}
+            fontSize={{ base: "xl", xl: "4xl" }}
+          >
             Fernando Escudero
           </Heading>
-          <Heading fontSize={{ base: "xl", lg: "4xl" }}>Mauro Gonzalez</Heading>
-          <Heading fontSize={{ base: "xl", lg: "4xl" }}>Lucas Perez</Heading>
+          <Heading fontSize={{ base: "xl", xl: "4xl" }}>Mauro Gonzalez</Heading>
+          <Heading fontSize={{ base: "xl", xl: "4xl" }}>Lucas Perez</Heading>
         </VStack>
 
         <Heading
           as="h3"
           textShadow={"0px 4px #000"}
-          fontSize={{ base: "xl", lg: "4xl" }}
+          fontSize={{ base: "xl", xl: "4xl" }}
         >
           Gracias por prestar atencion
         </Heading>

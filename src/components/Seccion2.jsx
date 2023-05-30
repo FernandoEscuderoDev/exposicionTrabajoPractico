@@ -36,18 +36,18 @@ const Seccion2 = () => {
               _before={{
                 content: '" "',
                 position: "absolute",
-                p: { base: 16, lg: 28 },
+                p: { base: 16,md: 20, xl: 28 },
                 bgImage: dato.image,
                 bgSize: "cover",
-                left: { base: "200px", lg: "400px" },
-                top: { base: "-30px", lg: "-70px" },
+                left: { base: "200px", xl: "400px" },
+                top: { base: "-30px", md:'-40px', xl: "-70px" },
               }}
-              fontSize={{ base: "5xl", lg: "7xl" }}
+              fontSize={{ base: "5xl", xl: "7xl" }}
             >
               {dato.titulo}
             </Heading>
             <Text
-              fontSize={{ base: "md", lg: "2xl" }}
+              fontSize={{ base: "md", xl: "2xl" }}
               w={"80%"}
               style={{ whiteSpace: "break-spaces" }}
             >
@@ -66,12 +66,12 @@ const Seccion2 = () => {
                   as="li"
                   key={index}
                   listStyleType={"none"}
-                  fontSize={{ base: "sm", lg: "xl" }}
+                  fontSize={{ base: "sm", xl: "xl" }}
                 >
                   <Highlight
                     query={["Valla", "¡Vaya!", "Vaya", "Bayas", "Baya"]}
                     styles={{
-                      mx: { base: "0.5", lg: "1" },
+                      mx: { base: "0.5", xl: "1" },
                       p: 1,
                       bg: "white",
                       fontWeight: "bold",
