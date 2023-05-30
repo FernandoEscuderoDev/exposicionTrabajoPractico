@@ -42,13 +42,13 @@ export const Integrantes = () => {
         </Heading>
 
         <VStack ref={ref} gap={{lg: 4 }}>
-          <Heading fontSize={{ base: "xl", lg: "5xl" }}>Juliana Verna</Heading>
-          <Heading fontSize={{ base: "xl", lg: "5xl" }}>Fernando Escudero</Heading>
-          <Heading fontSize={{ base: "xl", lg: "5xl" }}>Mauro Gonzalez</Heading>
-          <Heading fontSize={{ base: "xl", lg: "5xl" }}>Lucas Perez</Heading>
+          <Heading fontSize={{ base: "xl", lg: "4xl" }}>Juliana Verna</Heading>
+          <Heading fontSize={{ base: "xl", lg: "4xl" }}>Fernando Escudero</Heading>
+          <Heading fontSize={{ base: "xl", lg: "4xl" }}>Mauro Gonzalez</Heading>
+          <Heading fontSize={{ base: "xl", lg: "4xl" }}>Lucas Perez</Heading>
         </VStack>
 
-        <Heading as="h3" textShadow={"0px 4px #000"} fontSize={{ base: "xl", lg: "3xl" }}>
+        <Heading as="h3" textShadow={"0px 4px #000"} fontSize={{ base: "xl", lg: "4xl" }}>
           Gracias por prestar atencion
         </Heading>
       </VStack>
