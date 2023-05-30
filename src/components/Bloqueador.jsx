@@ -10,12 +10,11 @@ import {
 export const Bloqueador = () => {
   const variant = useBreakpointValue({
     base: true,
-    md: false,
+    sm: false,
   });
   return (
     <Modal
       size={"xl"}
-      display={{ base: "block", md: "none" }}
       isOpen={variant}
       isCentered
     >
