@@ -60,7 +60,7 @@ export const Integrantes = () => {
               bgImage:
                 "https://media.tenor.com/HLrXIleGBToAAAAi/transparent-cat.gif",
               bgSize: "cover",
-              right: { base: "250px", xl: "450px" },
+              right: { base: "-120px", xl: "450px" },
               top: { base: "-30px", xl: "-70px" },
             }}
             _after={{
@@ -71,7 +71,7 @@ export const Integrantes = () => {
               bgImage:
                 "https://media.tenor.com/HLrXIleGBToAAAAi/transparent-cat.gif",
               bgSize: "cover",
-              left: { base: "250px", xl: "450px" },
+              left: { base: "-120px", xl: "450px" },
               top: { base: "-30px", xl: "-70px" },
             }}
             fontSize={{ base: "xl", xl: "4xl" }}
