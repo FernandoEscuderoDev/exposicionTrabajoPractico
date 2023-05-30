@@ -13,7 +13,7 @@ export const Integrantes = () => {
       const jsConfetti = new JSConfetti();
       const confettisActivado = setTimeout(() => {
         jsConfetti.addConfetti({
-          confettiNumber: 200,
+          confettiNumber: 300,
           emojiSize: 50,
         });
       }, 500);
