@@ -36,7 +36,7 @@ const Seccion2 = () => {
               _before={{
                 content: '" "',
                 position: "absolute",
-                p: {base: 14, lg: 28 },
+                p: {base: 16, lg: 28 },
                 bgImage: dato.image,
                 bgSize: "cover",
                 left: { base: "200px", lg: "350px" },
