@@ -27,7 +27,6 @@ export const Integrantes = () => {
       textColor="white"
       className="section"
       textAlign={"center"}
-      ref={ref}
     >
       <VStack
         as={"article"}
@@ -42,6 +41,7 @@ export const Integrantes = () => {
           as="h2"
           textShadow={"0px 4px #000"}
           fontSize={{ base: "5xl", lg: "7xl" }}
+          ref={ref}
         >
           Integrantes
         </Heading>
