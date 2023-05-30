@@ -71,8 +71,8 @@ const Seccion2 = () => {
                   <Highlight
                     query={["Valla", "¡Vaya!", "Vaya", "Bayas", "Baya"]}
                     styles={{
-                      mx: { base: "0.5", lg: "1" },
-                      p: { base: "0.5", lg: "1" },
+                      mx: 1,
+                      p: 1,
                       bg: "white",
                       fontWeight: "bold",
                       rounded: "40px",
