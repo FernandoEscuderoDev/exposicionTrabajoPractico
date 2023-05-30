@@ -50,7 +50,7 @@ export const SeccionSintesis = () => {
         <VStack
           alignItems={"flex-start"}
           gap={{ base: 2, md: 4, lg: 8 }}
-          fontSize={{ base: "xs", lg: "xl" }}
+          fontSize={{ base: "xs",md:'sm', lg: "xl" }}
           w={"60%"}
         >
           {sintesis.map((dato, index) => (
