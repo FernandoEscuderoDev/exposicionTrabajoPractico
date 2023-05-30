@@ -5,6 +5,7 @@ import Seccion2 from "./Seccion2";
 import { SeccionSintesis } from "./SeccionSintesis";
 import { Box } from "@chakra-ui/react";
 import { Integrantes } from "./Integrantes";
+import { Juego } from "./Juego";
 
 const page1 = () => {
   return (
@@ -17,6 +18,7 @@ const page1 = () => {
             <Seccion2 />
             <SeccionSintesis />
             <Integrantes />
+            <Juego/>
           </ReactFullpage.Wrapper>
         )}
       />

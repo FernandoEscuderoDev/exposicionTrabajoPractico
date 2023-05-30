@@ -24,7 +24,7 @@ const Seccion2 = () => {
             as={"article"}
             bgGradient={`linear(to-b, ${dato.color})`}
             justifyContent={"space-evenly"}
-            align={"center"}
+            alignItems={"center"}
             h={"100vh"}
             flexDir={"column"}
             textTransform={"uppercase"}
