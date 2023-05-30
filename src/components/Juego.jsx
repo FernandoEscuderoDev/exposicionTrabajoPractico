@@ -2,8 +2,8 @@ import { Box, Heading, VStack, useToken } from "@chakra-ui/react";
 
 export const Juego = () => {
   const [yellow500, yellow700] = useToken("colors", [
-    "purple.700",
-    "purple.900",
+    "pink.700",
+    "pink.900",
   ]);
   return (
     <Box w={"100%"} className="section">
