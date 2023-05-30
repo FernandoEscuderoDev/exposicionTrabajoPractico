@@ -17,9 +17,9 @@ export const Bloqueador = () => {
   });
   return (
     <Modal size={"xs"} isOpen={variant} isCentered>
-      <ModalOverlay backdropFilter="blur(5px) hue-rotate(250deg)" />
-      <ModalContent rounded={"xl"} color={"white"} bgColor={"red.500"}>
-        <ModalHeader display={"flex"} gap={2} justifyContent={"center"} alignItems={"center"} boxShadow={"dark-lg"}>
+      <ModalOverlay backdropFilter="blur(10px) hue-rotate(290deg)" />
+      <ModalContent boxShadow={"dark-lg"} rounded={"xl"} color={"white"} bgColor={"red.500"}>
+        <ModalHeader display={"flex"} gap={2} justifyContent={"center"} alignItems={"center"} roundedTop={'xl'} boxShadow={"dark-lg"}>
           Gira el celular
           <Icon boxSize={8} as={TbDeviceMobileRotated} />
         </ModalHeader>
