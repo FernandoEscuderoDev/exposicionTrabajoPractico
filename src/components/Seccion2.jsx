@@ -1,6 +1,5 @@
 import {
   Box,
-  Center,
   Flex,
   Heading,
   Highlight,
@@ -15,6 +14,7 @@ const Seccion2 = () => {
       {contenido.map((dato, index) => (
         <Box
           as="section"
+          id="a"
           key={index}
           textColor="white"
           className="section"
@@ -32,43 +32,55 @@ const Seccion2 = () => {
             <Heading
               as="h2"
               textShadow={"6px 3px #000"}
-              position={'relative'}
+              position={"relative"}
               _before={{
                 content: '" "',
                 position: "absolute",
-                p: {md:16,lg:28},
-                bgImage:dato.image,
-                bgSize:'cover',
-                left: {sm:'150px',lg:'350px'},
-                top:{sm:'-40px',lg:'-70px'}
+                p: {base: 14, lg: 28 },
+                bgImage: dato.image,
+                bgSize: "cover",
+                left: { base: "200px", lg: "350px" },
+                top: { base: "-30px", lg: "-70px" },
               }}
-              fontSize={{sm:'5xl',lg:'7xl'}}
+              fontSize={{ base: "5xl", lg: "7xl" }}
             >
               {dato.titulo}
             </Heading>
             <Text
-              fontSize={{sm:'lg',lg:'2xl'}}
+              fontSize={{ base: "md", lg: "2xl" }}
               w={"80%"}
               style={{ whiteSpace: "break-spaces" }}
             >
               {dato.contenido}
             </Text>
-            <SimpleGrid as={"ul"} columns={2} spacing={2} h={"20%"} w={"90%"}>
-              {dato.frases.map((datos, index) => (
-                <Center as="li" key={index} fontSize={{sm:'sm',lg:'lg'}}>
+            <SimpleGrid
+              as={"ul"}
+              columns={2}
+              spacing={2}
+              h={"20%"}
+              w={"90%"}
+              textTransform={"none"}
+            >
+              {dato.frases.map((frase, index) => (
+                <Text
+                  as="li"
+                  key={index}
+                  listStyleType={"none"}
+                  fontSize={{ base: "sm", lg: "xl" }}
+                >
                   <Highlight
-                    query={["Valla", "¡Vaya!", "Vaya",'Bayas','Baya']}
+                    query={["Valla", "¡Vaya!", "Vaya", "Bayas", "Baya"]}
                     styles={{
-                      mx: {lg:'1'},
-                      p: {lg:'1'},
+                      mx: { base: "0.5", lg: "1" },
+                      p: { base: "0.5", lg: "1" },
                       bg: "white",
                       fontWeight: "bold",
                       rounded: "40px",
                     }}
                   >
-                    {datos}
+                    {frase}
                   </Highlight>
-                </Center>
+                </Text>
               ))}
             </SimpleGrid>
           </Flex>

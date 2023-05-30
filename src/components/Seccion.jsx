@@ -4,9 +4,7 @@ const Seccion = () => {
   return (
     <Box
       as="section"
-      bgImage={
-        "/bgSeccion.jpg"
-      }
+      bgImage={"/bgSeccion.jpg"}
       bgSize={"cover"}
       bgPosition={"100% 100%"}
       bgRepeat={"no-repeat"}
@@ -33,11 +31,11 @@ const Seccion = () => {
           w={"35%"}
           h={"xl"}
           as="h1"
-          fontSize={{md:'5xl',lg:'6xl'}}
+          fontSize={{ base: "4xl", lg: "6xl" }}
         >
           Uso del "Vaya", "Valla" y "Baya"
         </Heading>
-        <Heading as="h3" pb={"14"} fontSize={{md:'lg',lg:'xl'}}>
+        <Heading as="h3" pb={"14"} fontSize={{ base: "lg", lg: "xl" }}>
           Comprensión y producción de textos
         </Heading>
       </Flex>
