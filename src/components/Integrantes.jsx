@@ -13,7 +13,7 @@ export const Integrantes = () => {
       const jsConfetti = new JSConfetti();
       const confettisActivado = setTimeout(() => {
         window.navigator.vibrate([
-          200, 100, 200, 100, 200, 100, 200, 100, 300, 50, 200,
+          200, 100, 200, 100, 200, 100, 200, 100, 400, 50, 200,
         ]);
         jsConfetti.addConfetti({
           confettiNumber: 300,
