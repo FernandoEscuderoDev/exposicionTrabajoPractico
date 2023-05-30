@@ -12,7 +12,9 @@ export const Integrantes = () => {
     if (isInView) {
       const jsConfetti = new JSConfetti();
       const confettisActivado = setTimeout(() => {
-        window.navigator.vibrate([150, 100, 150, 100,150,100, 150, 100, 400, 50,300]);
+        window.navigator.vibrate([
+          200, 100, 200, 100, 200, 100, 200, 100, 300, 50, 200,
+        ]);
         jsConfetti.addConfetti({
           confettiNumber: 300,
           emojiSize: 50,
@@ -64,7 +66,7 @@ export const Integrantes = () => {
             _after={{
               content: '" "',
               position: "absolute",
-              transform:'scaleX(-1)',
+              transform: "scaleX(-1)",
               p: { base: 14, xl: 24 },
               bgImage:
                 "https://media.tenor.com/HLrXIleGBToAAAAi/transparent-cat.gif",
