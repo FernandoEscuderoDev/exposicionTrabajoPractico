@@ -53,8 +53,8 @@ export const SeccionSintesis = () => {
           fontSize={{ base: "xs", lg: "xl" }}
           w={"60%"}
         >
-          {sintesis.map((dato) => (
-            <Text style={{ whiteSpace: "break-spaces" }}>
+          {sintesis.map((dato, index) => (
+            <Text key={index} style={{ whiteSpace: "break-spaces" }}>
               <Highlight
                 query={["“vaya”", "“valla”", "“baya”"]}
                 styles={{
