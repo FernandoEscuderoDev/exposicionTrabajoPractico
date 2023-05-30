@@ -20,8 +20,6 @@ const Seccion = () => {
         flexDir={"column"}
         textTransform={"uppercase"}
         bgColor={"blackAlpha.500"}
-        backdropFilter="auto"
-        backdropBlur={"md"}
         textColor={"white"}
       >
         <Heading
