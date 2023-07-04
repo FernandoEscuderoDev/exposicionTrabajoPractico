@@ -84,7 +84,6 @@ export const Integrantes = () => {
             Fernando Escudero
           </Heading>
           <Heading fontSize={{ base: "xl", xl: "4xl" }}>Mauro Gonzalez</Heading>
-          <Heading fontSize={{ base: "xl", xl: "4xl" }}>Lucas Perez</Heading>
         </VStack>
 
         <Heading
